@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaxongir</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="main_page">
+                <button class="main_btn btn_sign_in">Войти</button>
+                <button class="main_btn btn_sign_up">Регистрация</button>
+            </div>
+            <div class="sign_in active">
+                <form class="form in" action="" name="form">
+                    <input class="input" required minlength="3" maxlength="30" name="gmail_in" type="email"
+                        placeholder="@email.com" title="@email">
+                    <input class="input" required minlength="8" maxlength="15" name="pass_in" type="password"
+                        placeholder="Пароль" title="Пароль">
+                    <div class="setting">
+                        <label>
+                            <input name="chack" class="checkbox" type="checkbox">Забыл пароль
+                        </label>
+                    </div>
+                    <button class="btn">Войти</button>
+                </form>
+                <button class="btn_x_1">
+                    <span class="spn1"></span>
+                    <span class="spn2"></span>
+                </button>
+            </div>
+            <div class="sign_up active">
+                <form class="form up" action="" name="form">
+                    <label class="account" title="Выберите фото">
+                        <div class="photo_account">
+                            <img src="./img/account.png" alt="">
+                        </div>
+                        <input class="file" id="file" type="file">
+                    </label>
+                    <input class="input" required minlength="3" maxlength="15" name="txt_1" type="text" id="txt_1"
+                        placeholder="Имя" title="Имя">
+                    <input class="input" required minlength="3" maxlength="15" name="txt_2" type="text" id="txt_2"
+                        placeholder="Фамилия" title="Фамилия">
+                    <input class="input" required minlength="8" maxlength="16" name="pass" type="password" id="pass"
+                        placeholder="Пароль" title="Пароль">
+                    <input class="input" required minlength="3" maxlength="35" name="email" type="email" id="email"
+                        placeholder="@email.com" title="@email">
+                    <input class="input" type="text" id="city" list="region" name="airports" title="выберете один из городов">
+                    <datalist id="region">
+                        <option value="Ташкент">
+                        <option value="Самаркандская область">
+                        <option value="Бухарская область">
+                        <option value="Джизакская область">
+                        <option value="Сырдарьинская область">
+                        <option value="Наманганская область">
+                        <option value="Навоийская область">
+                        <option value="Андижанская область">
+                        <option value="Кашкадарьинская область">
+                        <option value="Сурхандарьинская область">
+                        <option value="Ферганская область">
+                        <option value="Хорезмская область">
+                    </datalist>
+                    <input class="input" type="date" id="data" title="Дата рождения">
+                    <div class="setting">
+                        <label class="chack">
+                            <input name="chack" class="checkbox chack" type="checkbox">согласен с условиями
+                        </label>
+                        <input type="reset" class="reset" value="сброс">
+                    </div>
+                    <button class="btn">Регистрация</button>
+                </form>
+                <button class="btn_x_2">
+                    <span class="spn1"></span>
+                    <span class="spn2"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
