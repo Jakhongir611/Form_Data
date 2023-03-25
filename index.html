@@ -51,7 +51,7 @@
                         placeholder="Пароль" title="Пароль">
                     <input class="input" required minlength="3" maxlength="35" name="email" type="email" id="email"
                         placeholder="@email.com" title="@email">
-                    <input class="input" type="text" id="city" list="region" name="airports"
+                    <input class="input" required type="text" id="city" list="region" name="airports"
                         title="выберете один из городов">
                     <datalist id="region">
                         <option value="Ташкент">
@@ -67,10 +67,10 @@
                         <option value="Ферганская область">
                         <option value="Хорезмская область">
                     </datalist>
-                    <input class="input" type="date" id="data" title="Дата рождения">
+                    <input class="input" required type="date" id="data" title="Дата рождения">
                     <div class="setting">
                         <label class="chack">
-                            <input name="chack" class="checkbox chack" type="checkbox">согласен с условиями
+                            <input name="chack" required class="checkbox chack" type="checkbox">согласен с условиями
                         </label>
                         <input type="reset" class="reset" value="сброс">
                     </div>
