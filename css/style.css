@@ -75,7 +75,7 @@ input::-webkit-input-placeholder {
     gap: 25px;
 }
 .chack{
-    color: white;
+    color: #fff;
 }
 .checkbox {
     position: relative;
@@ -123,15 +123,17 @@ label:hover {
     height: 35px;
     border: none;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.349);
-    color: white;
+    background: #ffffff90;
+    color: black;
     font-size: 16px;
+    box-shadow: 0 0 5px 3px rgba(136, 136, 136, 0.9);
     font-weight: 600;
     transition: 200ms;
 }
 
 .btn:hover {
-    background: rgba(162, 150, 150, 0.493);
+    background: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 
 .btn_x_1 {
@@ -246,13 +248,20 @@ label:hover {
 .reset{
     width: 85px;
     height: 26px;
-    background: rgba(255, 255, 255, 0.315);
     border: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
-    color: #e4e4e4;
+    color: #000000;
+    background: #ffffff90;
+    box-shadow: 0 0 5px 3px rgba(136, 136, 136, 0.9);
+    transition: 200ms;
 }
+.reset:hover{
+    background: rgb(255, 255, 255);
+    transform: scale(1.03);
+}
+
 
 
 

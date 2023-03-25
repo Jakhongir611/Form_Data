@@ -41,9 +41,9 @@ btn_sign_up.addEventListener("click", (event)=>{
     main_page.classList.add('active')
 })
 
-
 form_up.addEventListener('submit', (event)=>{
     event.preventDefault()
+    
     let obj = {
         name: imya.value,
         surname: familiya.value,
@@ -54,8 +54,12 @@ form_up.addEventListener('submit', (event)=>{
         data: data.value
     }
     console.log(obj);
+    
     imya.value = ""
     familiya.value = ""
     pass.value = ""
     email.value = ""
+    file.value = ""
+    city.value = ""
+    data.value = ""
 })

@@ -37,12 +37,12 @@
             </div>
             <div class="sign_up active">
                 <form class="form up" action="" name="form">
-                    <label class="account" title="Выберите фото">
+                    <label for="file" class="account" title="Выберите фото">
                         <div class="photo_account">
                             <img src="./img/account.png" alt="">
                         </div>
-                        <input class="file" id="file" type="file">
                     </label>
+                    <input class="file" id="file" type="file">
                     <input class="input" required minlength="3" maxlength="15" name="txt_1" type="text" id="txt_1"
                         placeholder="Имя" title="Имя">
                     <input class="input" required minlength="3" maxlength="15" name="txt_2" type="text" id="txt_2"
@@ -51,7 +51,8 @@
                         placeholder="Пароль" title="Пароль">
                     <input class="input" required minlength="3" maxlength="35" name="email" type="email" id="email"
                         placeholder="@email.com" title="@email">
-                    <input class="input" type="text" id="city" list="region" name="airports" title="выберете один из городов">
+                    <input class="input" type="text" id="city" list="region" name="airports"
+                        title="выберете один из городов">
                     <datalist id="region">
                         <option value="Ташкент">
                         <option value="Самаркандская область">
@@ -74,6 +75,7 @@
                         <input type="reset" class="reset" value="сброс">
                     </div>
                     <button class="btn">Регистрация</button>
+                    <input type="color">
                 </form>
                 <button class="btn_x_2">
                     <span class="spn1"></span>
