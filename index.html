@@ -43,11 +43,11 @@
                         </div>
                     </label>
                     <input class="file" id="file" type="file">
-                    <input class="input" required minlength="3" maxlength="15" name="txt_1" type="text" id="txt_1"
+                    <input class="input" required minlength="3" maxlength="15" name="name" type="text" id="txt_1"
                         placeholder="Имя" title="Имя">
-                    <input class="input" required minlength="3" maxlength="15" name="txt_2" type="text" id="txt_2"
+                    <input class="input" required minlength="3" maxlength="15" name="surname" type="text" id="txt_2"
                         placeholder="Фамилия" title="Фамилия">
-                    <input class="input" required minlength="8" maxlength="16" name="pass" type="password" id="pass"
+                    <input class="input" required minlength="8" maxlength="16" name="password" type="password" id="pass"
                         placeholder="Пароль" title="Пароль">
                     <input class="input" required minlength="3" maxlength="35" name="email" type="email" id="email"
                         placeholder="@email.com" title="@email">
@@ -67,15 +67,14 @@
                         <option value="Ферганская область">
                         <option value="Хорезмская область">
                     </datalist>
-                    <input class="input" required type="date" id="data" title="Дата рождения">
+                    <input class="input" required type="date" name="date" id="data" title="Дата рождения">
                     <div class="setting">
                         <label class="chack">
-                            <input name="chack" required class="checkbox chack" type="checkbox">согласен с условиями
+                            <input name="chack" required id="check" class="checkbox chack" type="checkbox">согласен с условиями
                         </label>
                         <input type="reset" class="reset" value="сброс">
                     </div>
                     <button class="btn">Регистрация</button>
-                    <input type="color">
                 </form>
                 <button class="btn_x_2">
                     <span class="spn1"></span>
@@ -87,7 +86,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

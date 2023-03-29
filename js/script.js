@@ -44,17 +44,27 @@ btn_sign_up.addEventListener("click", (event)=>{
 form_up.addEventListener('submit', (event)=>{
     event.preventDefault()
     
-    let obj = {
-        name: imya.value,
-        surname: familiya.value,
-        password: pass.value,
-        email: email.value,
-        file: file.value,
-        city: city.value,
-        data: data.value
-    }
-    console.log(obj);
+    let inputs = doc.querySelectorAll('input')
+    let check = doc.querySelector('#check')
+
+    let form_data = {}
+
+    inputs.forEach(item=>{
+        form_data[item.name] = item.value
+        form_data['check'] = check.checked
+    })
     
+    let obj = {
+    name: imya.value,
+    surname: familiya.value,
+    password: pass.value,
+    email: email.value,
+    file: file.value,
+    city: city.value,
+    data: data.value
+}
+console.log(obj);
+
     imya.value = ""
     familiya.value = ""
     pass.value = ""
@@ -63,3 +73,18 @@ form_up.addEventListener('submit', (event)=>{
     city.value = ""
     data.value = ""
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
